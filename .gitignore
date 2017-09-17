@@ -1,0 +1,8 @@
+.idea
+.vscode/
+node_modules/
+typings/
+build-example/
+test-output/
+npmdist/
+.tmpbuild/

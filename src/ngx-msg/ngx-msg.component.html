@@ -1,0 +1,10 @@
+<div class="ngx-msg-container" [ngStyle]="{'top': pos.top, 'left': pos.left, 'bottom': pos.bottom, 'right': pos.right}">
+    <div class="ngx-msg" *ngFor="let m of messages; let i = index" [ngClass]="{'ngx-msg-success': m.level === 1, 'ngx-msg-info': m.level === 2, 'ngx-msg-warning': m.level === 3, 'ngx-msg-error': m.level === 4, 'ngx-msg-close-on-click': opts.closeOnClick}" (click)="onClickMsg(m)">
+        <div class="ngx-msg-icon-container">
+            <span class="ngx-msg-icon" [ngClass]="{'icon-ngx-msg-success': m.level === 1, 'icon-ngx-msg-info': m.level === 2, 'icon-ngx-msg-warning': m.level === 3, 'icon-ngx-msg-error': m.level === 4}"></span>
+        </div>
+        <div class="ngx-msg-text-container" [ngClass]="{'ngx-msg-text-container-not-full': pos.left === null || pos.right === null}">
+            <div class="ngx-msg-text">{{m.text}}</div>
+        </div>
+    </div>
+</div>
