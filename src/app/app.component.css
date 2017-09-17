@@ -1,0 +1,70 @@
+.pagecontent {
+  margin: 10px 300px;
+}
+
+.maintitle {
+  background-color: #EEE;
+  height: 180px;
+  border-bottom: 1px solid #CCC;
+  background: linear-gradient(to right, rgba(44, 83, 158, 1) 0%, rgba(44, 83, 158, 1) 100%);
+  text-align: center;
+}
+
+.maintitle div:first-child {
+  display: inline-block;
+  color: #FFF;
+  font-size: 46px;
+  font-weight: bold;
+  margin-top: 48px;
+}
+
+.maintitle div:last-child {
+  color: #FFF;
+  font-size: 18px;
+}
+
+.tabcontainer {
+  display: table;
+  width: 100%;
+  border-spacing: 2px;
+}
+
+.tab {
+  display: table-cell;
+  border-radius: 4px;
+  width: 33.33333%;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.activetab {
+  background-color: #2C539E;
+  color: #FFF;
+}
+
+.inactivetab {
+  color: #2C539E;
+}
+
+.inactivetab:hover {
+  background-color: #EEE;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.pagetext {
+  margin: 20px 0;
+}
+
+hr {
+  margin: 6px 0;
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, #DDD, #555, #DDD);
+}
+
+@media screen and (max-width: 1200px) {
+  .pagecontent {
+    margin: 10px 40px;
+  }
+}

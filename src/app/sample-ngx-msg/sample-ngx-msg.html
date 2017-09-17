@@ -1,0 +1,76 @@
+<style>
+  .radio-btn {
+    margin-right: 4px;
+    cursor: pointer;
+  }
+  .radio-btn-label {
+    font-size: 16px;
+  }
+  .button-success,
+  .button-info,
+  .button-warning,
+  .button-error {
+    padding: 2px 6px;
+    cursor: pointer;
+    border: 1px solid #AAA;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+
+  .button-success:hover,
+  .button-info:hover,
+  .button-warning:hover,
+  .button-error:hover {
+    background-color: #78FA89;
+    color: #000;
+  }
+
+  .button-success {
+    background-color: #CFEAC4;
+    color: #2C763E;
+  }
+
+  .button-info {
+    background-color: #CFE3ED;
+    color: #3A87AD;
+  }
+
+  .button-warning {
+    background-color: #FFFFCC;
+    color: #8E6621;
+  }
+
+  .button-error {
+    background-color: #F2DEDE;
+    color: #A94444;
+  }
+</style>
+
+<ngx-msg [options]="options"></ngx-msg>
+
+<div class="maintext">Angular notification component</div>
+<ul>
+  <li>Source code of the component is <a href="https://github.com/kekeh/ngx-msg" target="_blank">here</a></li>
+</ul>
+
+<hr/>
+
+<div>
+  <p class="radio-btn-container">
+    <input class="radio-btn" type="radio" value="1" [checked]="radioBtnSelection === 1" (change)="onRadioBtnClicked(1)"><label class="radio-btn-label">Top right</label><br/>
+    <input class="radio-btn"  type="radio" value="2" [checked]="radioBtnSelection === 2" (change)="onRadioBtnClicked(2)"><label class="radio-btn-label">Top left</label><br/>
+
+    <input class="radio-btn"  type="radio" value="3" [checked]="radioBtnSelection === 3" (change)="onRadioBtnClicked(3)"><label class="radio-btn-label">Bottom right</label><br/>
+    <input class="radio-btn"  type="radio" value="4" [checked]="radioBtnSelection === 4" (change)="onRadioBtnClicked(4)"><label class="radio-btn-label">Bottom left</label><br/>
+
+    <input class="radio-btn"  type="radio" value="5" [checked]="radioBtnSelection === 5" (change)="onRadioBtnClicked(5)"><label class="radio-btn-label">Top full</label><br/>
+    <input class="radio-btn"  type="radio" value="6" [checked]="radioBtnSelection === 6" (change)="onRadioBtnClicked(6)"><label class="radio-btn-label">Bottom full</label><br/>
+  </p>
+
+
+  <button class="button-success" type="button" (click)="successMsg()">Success message</button>
+  <button class="button-info" type="button" (click)="infoMsg()">Info message</button>
+  <button class="button-warning" type="button" (click)="warningMsg()">Warning message</button>
+  <button class="button-error" type="button" (click)="errorMsg()">Error message</button>
+</div>
+
