@@ -6,7 +6,7 @@ import {By} from '@angular/platform-browser';
 import {DebugElement} from '@angular/core';
 import {NgxMsgComponent} from './ngx-msg.component';
 import {NgxMsgService} from './services/ngx-msg.service';
-
+import {NgxMsgConfigService} from './services/ngx-msg-config.service';
 
 
 let comp: NgxMsgComponent;
@@ -20,7 +20,7 @@ describe('NgxMsgComponent', () => {
         TestBed.configureTestingModule({
             imports: [FormsModule],
             declarations: [NgxMsgComponent],
-            providers: [NgxMsgService]
+            providers: [NgxMsgService, NgxMsgConfigService!]
         });
 
         fixture = TestBed.createComponent(NgxMsgComponent);
