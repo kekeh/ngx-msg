@@ -1,12 +1,12 @@
 .ngx-msg-container {
     position: fixed;
+    z-index: 100000;
 }
 
 .ngx-msg {
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    z-index: 100000;
     border-radius: 2px;
     -moz-box-shadow: 0 0 12px #000;
     -webkit-box-shadow: 0 0 12px #000;
