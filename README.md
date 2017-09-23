@@ -2,6 +2,8 @@
 
 **Angular notification component**
 
+[![Build Status](https://travis-ci.org/kekeh/ngx-msg.svg?branch=master)](https://travis-ci.org/kekeh/ngx-msg)
+[![npm](https://img.shields.io/npm/v/ngx-msg.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/ngx-msg)
 
 ## Description
 Angular notification component. This component shows notification messages. Online demo is [here](http://kekeh.github.io/ngx-msg)
@@ -66,7 +68,7 @@ To install this component to an external project, follow the procedure:
         }
 
         sendMessages(): void {
-            this.msgService.message({level: NgxMsgLevel.Succeed, text: 'Succeed message.'});
+            this.msgService.message({level: NgxMsgLevel.Success, text: 'Success message.'});
             this.msgService.message({level: NgxMsgLevel.Info, text: 'Info message.'});
             this.msgService.message({level: NgxMsgLevel.Warning, text: 'Warning message.'});
             this.msgService.message({level: NgxMsgLevel.Error, text: 'Error message.', visibleTime: 5000});
@@ -100,7 +102,7 @@ Options attribute overrides options set by __NgxMsgConfigService__ config servic
         constructor(private msgService: NgxMsgService) { }
 
         sendMessages(): void {
-            this.msgService.message({level: NgxMsgLevel.Succeed, text: 'Succeed message.'});
+            this.msgService.message({level: NgxMsgLevel.Success, text: 'Success message.'});
             this.msgService.message({level: NgxMsgLevel.Info, text: 'Info message.'});
             this.msgService.message({level: NgxMsgLevel.Warning, text: 'Warning message.'});
             this.msgService.message({level: NgxMsgLevel.Error, text: 'Error message.', visibleTime: 5000});

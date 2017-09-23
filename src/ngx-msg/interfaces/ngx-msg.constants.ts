@@ -8,7 +8,7 @@ export class NgxMsgPosition {
 }
 
 export class NgxMsgLevel {
-    static readonly Succeed = 1;
+    static readonly Success = 1;
     static readonly Info = 2;
     static readonly Warning = 3;
     static readonly Error = 4;

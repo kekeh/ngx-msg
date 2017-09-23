@@ -29,7 +29,7 @@ export class MyNgxMsgApp implements OnInit {
     }
 
     successMsg(): void {
-        this.msgService.message({level: NgxMsgLevel.Succeed, text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', visibleTime: 3000});
+        this.msgService.message({level: NgxMsgLevel.Success, text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', visibleTime: 3000});
     }
 
     infoMsg(): void {
