@@ -26,7 +26,7 @@ export class SampleNgxMsg implements OnInit {
   }
 
   successMsg(): void {
-    this.msgService.message({level: NgxMsgLevel.Succeed, text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'});
+    this.msgService.message({level: NgxMsgLevel.Success, text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'});
   }
 
   infoMsg(): void {
